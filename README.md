@@ -28,4 +28,4 @@ A Windowsill user is someone who wants to relive the 90's Tomagotchi experience 
 
 
 ## Wireframes
-
+![Wireframe](Images/wireframe.png)
