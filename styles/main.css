@@ -19,7 +19,52 @@ body {
     background-color: var(--secondary); 
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     align-content: space-around;
 }
 
+.logo {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: var(--primary);
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    text-align: left;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buttons {
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.progress-bars {
+    display:flex;
+    align-self: flex-end;
+    justify-self: space-around;
+}
