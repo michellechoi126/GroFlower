@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #84A59D;
+    --secondary: #F5CAC3;
+    --warning: #F6BD60;
+    --font: #F7EDE2;
+    --accents: #F28482;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: var(--secondary); 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
