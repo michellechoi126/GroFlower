@@ -18,19 +18,19 @@ const increaseGrowth = function() {
     timer--;
     if (timer === 15) {
         $("#stage1").css("color", "limegreen");
-        $("img").attr("src", "Images/pinkFlower/pinkFlower2.png");
+        $("img").attr("src", "./Images/pinkFlower/pinkFlower2.png");
     };
     if (timer === 10) {
         $("#stage2").css("color", "limegreen");
-        $("img").attr("src", "Images/pinkFlower/pinkFlower3.png");
+        $("img").attr("src", "./Images/pinkFlower/pinkFlower3.png");
     }
     if (timer === 5) {
         $("#stage3").css("color", "limegreen");
-        $("img").attr("src", "Images/pinkFlower/pinkFlower4.png");
+        $("img").attr("src", "./Images/pinkFlower/pinkFlower4.png");
     }
     if (timer === 0) {
         $("#stage4").css("color", "limegreen");
-        $("img").attr("src", "Images/pinkFlower/pinkFlower5.png");
+        $("img").attr("src", "./Images/pinkFlower/pinkFlower5.png");
     }
     if (timer < 0) {
         return clearInterval(increaseGrowth);
