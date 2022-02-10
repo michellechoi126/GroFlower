@@ -1,11 +1,5 @@
 console.log("loaded");
 
-/* === Global Variables === */
-// let growthInterval = setInterval;
-// let sunInterval = setInterval;
-// let waterInterval = setInterval;
-// let airInterval = setInterval;
-
 /* === DOM Elements === */
 const $startButton = $(".start");
 const $sunMeter = $("#sunlight");
@@ -109,11 +103,31 @@ $airButton.click(function () {
 });
 
 
-/* === Start/Reset === */
+/* === Animation === */
+// const animateCSS = (element, animation, prefix = "animate__") =>
 
+
+/* === Kill Plant === */
+const killPlant = function () {
+    console.log($waterLevel.attr("value"));
+    if ($sunMeter.attr("value") === "0" || $waterLevel.attr("value") === "0" || $airQuality.attr("value") === "0") {
+        $("img").attr("src", "./Images/deadPlant.png");
+        clearInterval(growthInterval);
+        clearInterval(sunInterval);
+        clearInterval(waterInterval);
+        clearInterval(airInterval);
+        clearInterval(killInterval);
+        alert("Whoops. You let your plant die! Refresh the page to start over with a new plant and try again.");
+    } 
+};
+let killInterval = setInterval;
+
+
+/* === Start/Reset === */
 $startButton.click(function () {
     growthInterval = setInterval(increaseGrowth, 1000);
     sunInterval = setInterval(decreaseSun, 2000);
     waterInterval = setInterval(decreaseWater, 1000);
     airInterval = setInterval(decreaseAir, 3000);
+    killInterval = setInterval(killPlant, 500);
 });
