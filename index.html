@@ -42,37 +42,53 @@
     <!-- Main Content -->
     <main class="plants-container">
         <div class="notes">
-            <h2>Plant Name</h2>
+            <h2>Instructions</h2>
+            <button class="start">Start</button>
         </div>
 
-        <div class="plant">Plant
+        <div class="plant">
+            <h3>Plant Name</h3>
         </div>
 
         <div class="progress-bars">
-            <meter id="growth"
-                min="0" max="100"
-                low="33" high="66" optimum="80"
+            <h4>Growth Tracker<h4>
+            <div class="growth">
+                <div id="stage1">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div id="stage2">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div id="stage3">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div id="stage4">
+                    <i class="fa-solid fa-leaf"></i>     
+                </div>
+                <div id="stage5">
+                    <i class="fa-solid fa-leaf"></i>      
+                </div>
+            </div>
+            <div class="life-meters">
+                <meter id="sunlight"
+                    min="0" max="100"
+                    low="33" high="66" optimum="80"
+                    value="100">
+                </meter>
+                    <label for="sunlight">Sun Meter</label>
+                <meter id="water"
+                    min="0" max="100"
+                    low="33" high="66" optimum="80"
+                    value="100">
+                </meter>
+                    <label for="water">Water Level</label>
+                <meter id="air"
+                    min="0" max="100"
+                        low="33" high="66" optimum="80"
                 value="100">
-            </meter>
-                <label for="growth">Growth Tracker</label>
-            <meter id="sunlight"
-                min="0" max="100"
-                low="33" high="66" optimum="80"
-                value="100">
-            </meter>
-                <label for="sunlight">Sun Meter</label>
-            <meter id="water"
-                min="0" max="100"
-                low="33" high="66" optimum="80"
-                value="100">
-            </meter>
-                <label for="water">Water Level</label>
-            <meter id="air"
-                min="0" max="100"
-                low="33" high="66" optimum="80"
-                value="100">
-            </meter>
-                <label for="air">Air Quality</label>
+                </meter>
+                    <label for="air">Air Quality</label>
+            </div>
         </div>
     </main>
 
