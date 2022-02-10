@@ -30,7 +30,6 @@ const decreaseWater = function() {
         };
 };
 let waterInterval = setInterval(decreaseWater, 1000);
-// decreaseWater();
 
 // Air Quality
 const $airQuality = $("#air");
@@ -45,25 +44,35 @@ const decreaseAir = function() {
 };
 let airInterval = setInterval(decreaseAir, 3000);
 
+
 /* === Buttons === */
 
 // Sun Button
 const $sunButton = $("#sun-button");
 
 $sunButton.click(function() {
-    console.log("hello");
+    if ($sunMeter.attr("value") < 101) {
+        sun += 10
+    $sunMeter.attr("value", sun);
+    };
 });
 
 // Water Button
 const $waterButton = $("#water-button");
 
 $waterButton.click(function() {
-    console.log("hello");
+    if ($waterLevel.attr("value") < 101) {
+        water += 10
+    $waterLevel.attr("value", water);
+    };
 });
 
 // Air Button
 const $airButton = $("#air-button");
 
 $airButton.click(function() {
-    console.log("hello");
+    if ($airQuality.attr("value") < 101) {
+        air += 10
+    $airQuality.attr("value", air);
+    };
 });
