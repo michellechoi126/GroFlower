@@ -1,5 +1,11 @@
 console.log("loaded");
 
+/* === Global Variables === */
+// let growthInterval = setInterval;
+// let sunInterval = setInterval;
+// let waterInterval = setInterval;
+// let airInterval = setInterval;
+
 /* === DOM Elements === */
 const $startButton = $(".start");
 const $sunMeter = $("#sunlight");
@@ -9,12 +15,13 @@ const $sunButton = $("#sun-button");
 const $waterButton = $("#water-button");
 const $airButton = $("#air-button");
 
+
 /* === Meters === */
 
 // Growth Tracker
 timer = 20;
 
-const increaseGrowth = function() {
+const increaseGrowth = function () {
     timer--;
     if (timer === 15) {
         $("#stage1").css("color", "limegreen");
@@ -36,72 +43,77 @@ const increaseGrowth = function() {
         return clearInterval(increaseGrowth);
     }
 };
-
-let growthInterval = setInterval(increaseGrowth, 1000);
-
-$startButton.click(function() {
-    growthInterval();
-});
+let growthInterval = setInterval;
 
 // Sun Meter
 let sun = 100;
 
-const decreaseSun = function() {
+const decreaseSun = function () {
     sun -= 10;
     $sunMeter.attr("value", sun);
-    if (sun === 0){
+    if (sun === 0) {
         return clearInterval(sunInterval);
     };
 };
-let sunInterval = setInterval(decreaseSun, 2000);
+let sunInterval = setInterval;
 
 // Water Level
 let water = 100;
 
-const decreaseWater = function() {
-        water -= 10;
-        $waterLevel.attr("value", water);
-        if (water === 0){
-            return clearInterval(waterInterval);
-        };
+const decreaseWater = function () {
+    water -= 10;
+    $waterLevel.attr("value", water);
+    if (water === 0) {
+        return clearInterval(waterInterval);
+    };
 };
-let waterInterval = setInterval(decreaseWater, 1000);
+let waterInterval = setInterval;
 
 // Air Quality
 let air = 100;
 
-const decreaseAir = function() {
+const decreaseAir = function () {
     air -= 10;
     $airQuality.attr("value", air);
-    if (air === 0){
+    if (air === 0) {
         return clearInterval(airInterval);
     };
 };
-let airInterval = setInterval(decreaseAir, 3000);
+let airInterval = setInterval;
 
 
 /* === Buttons === */
 
 // Sun Button
-$sunButton.click(function() {
+$sunButton.click(function () {
     if ($sunMeter.attr("value") < 101 && $sunMeter.attr("value") > 0) {
         sun += 10
-    $sunMeter.attr("value", sun);
+        $sunMeter.attr("value", sun);
     };
 });
 
 // Water Button
-$waterButton.click(function() {
+$waterButton.click(function () {
     if ($waterLevel.attr("value") < 101 && $waterLevel.attr("value") > 0) {
         water += 10
-    $waterLevel.attr("value", water);
+        $waterLevel.attr("value", water);
     };
 });
 
 // Air Button
-$airButton.click(function() {
+$airButton.click(function () {
     if ($airQuality.attr("value") < 101 && $airQuality.attr("value") > 0) {
         air += 10
-    $airQuality.attr("value", air);
+        $airQuality.attr("value", air);
     };
+});
+
+
+/* === Start/Reset === */
+
+$startButton.click(function () {
+    growthInterval = setInterval(increaseGrowth, 1000);
+    sunInterval = setInterval(decreaseSun, 2000);
+    waterInterval = setInterval(decreaseWater, 1000);
+    airInterval = setInterval(decreaseAir, 3000);
 });
