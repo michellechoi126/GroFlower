@@ -50,9 +50,20 @@ let airInterval = setInterval(decreaseAir, 3000);
 // Sun Button
 const $sunButton = $("#sun-button");
 
-$sunButton.click(function(){
+$sunButton.click(function() {
     console.log("hello");
 });
 
 // Water Button
-const $waterButton = $("#")
+const $waterButton = $("#water-button");
+
+$waterButton.click(function() {
+    console.log("hello");
+});
+
+// Air Button
+const $airButton = $("#air-button");
+
+$airButton.click(function() {
+    console.log("hello");
+});
