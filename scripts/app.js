@@ -114,9 +114,8 @@ $("#nameSubmission").click(function(event) {
     event.preventDefault();
     event.stopPropagation();
     const $userName = $("#nameInput").val();
-    const $newName = $("<h3></h3>");
+    const $newName = $("h3");
     $newName.text($userName);
-    $(".plant").append($newName);
 });
 
 

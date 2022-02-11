@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    margin: 50px 10px;
+    margin: 30px 10px;
     padding: 20px;
     background-color: var(--primary);
     font-family: "Amatic SC", cursive;
@@ -47,8 +47,8 @@ body {
 .notes {
     height: 50%;
     width: 20%;
-    margin: 30px;
-    padding: 30px;
+    margin: 20px;
+    padding: 0 20px 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +118,14 @@ body {
     top: 30%;
 }
 
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+}
+
 img {
     transition: all 0.2s ease-in-out;
     animation-iteration-count: 1;
@@ -144,6 +152,7 @@ img {
     justify-content: space-evenly;
     background-color: var(--secondary);
     font-family: 'Roboto Mono', monospace; 
+    font-size: 20px;
     font-weight: 700; 
     text-decoration: none; 
     font-style: normal; 
