@@ -103,8 +103,15 @@ $airButton.click(function () {
 });
 
 
-/* === Animation === */
-// const animateCSS = (element, animation, prefix = "animate__") =>
+/* === Plant Name === */
+$("#nameSubmission").click(function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const $userName = $("#nameInput").val();
+    const $newName = $("<h3></h3>");
+    $newName.text($userName);
+    $(".plant").append($newName);
+});
 
 
 /* === Kill Plant === */
