@@ -16,7 +16,7 @@ A Windowsill user is someone who wants to relive the 90's Tomagotchi experience 
 - As a plant parent, you must water the plant so it doesn't die of thirst
 - As a plant parent, you can expose your plant to more sunlight for photosynthesis to happen
 - As a plant parent, you may occasionally open the window for fresh air and watch it sway in the wind so it can shake off the dust accumulating on its leaves
-- As a plant parent, you have the pleasure of watching as the plant grows bigger every leaf it accumulates in the Growth Tracker until it reaches full materity of 4 leaves in the tracker.
+- As a plant parent, you have the pleasure of watching as the plant grows bigger every leaf it accumulates in the Growth Tracker until it reaches full maturity of 4 leaves in the tracker.
 
 #### Opportunities to advance the user experience further:
 - optimize CSS Styling to be responsive and adaptable to smaller screens
@@ -24,7 +24,7 @@ A Windowsill user is someone who wants to relive the 90's Tomagotchi experience 
 - fertilize plants to grow more flowers
 - turn on GroLight for faster growth
 - mist plants to let plants shine
-- propogate or plant new seeds
+- propagate or plant new seeds
 
 
 ## Wireframes
