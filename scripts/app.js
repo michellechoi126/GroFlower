@@ -95,11 +95,17 @@ $waterButton.click(function () {
 });
 
 // Air Button
+const timeOut = () => {
+$("img").css("animation", "");
+};
+
 $airButton.click(function () {
     if ($airQuality.attr("value") < 101 && $airQuality.attr("value") > 0) {
         air += 10
         $airQuality.attr("value", air);
     };
+    $("img").css("animation", "sway 3s ease");
+    setTimeout(timeOut, 3000);
 });
 
 
@@ -116,7 +122,6 @@ $("#nameSubmission").click(function(event) {
 
 /* === Kill Plant === */
 const killPlant = function () {
-    console.log($waterLevel.attr("value"));
     if ($sunMeter.attr("value") === "0" || $waterLevel.attr("value") === "0" || $airQuality.attr("value") === "0") {
         $("img").attr("src", "./Images/deadPlant.png");
         clearInterval(growthInterval);

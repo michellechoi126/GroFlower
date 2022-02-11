@@ -67,6 +67,21 @@ main {
     flex-direction: row;
 }
 
+img {
+    transition: all 0.2s ease-in-out;
+    /* animation: sway 3s ease; */
+    animation-iteration-count: 1;
+}
+
+@keyframes sway {
+    20% {transform: rotate(5deg);}
+    40% {transform: rotate(-5deg);}
+    60% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    100% {transform: rotate(0);}
+}
+
+
 .progress-bars {
     display:flex;
     align-self: flex-end;
