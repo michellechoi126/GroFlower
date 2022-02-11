@@ -19,7 +19,7 @@ body {
         url("https://pngimg.com/uploads/window/window_PNG17665.png"),
         url("https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844229_1280.png");
     background-repeat: no-repeat;
-    background-position: 50% 5%;
+    background-position: 50% 10%;
     background-size: 50%;
     background-color: var(--accents); 
 }
@@ -47,13 +47,14 @@ body {
 .notes {
     height: 50%;
     width: 20%;
-    margin: 20px;
+    margin: 0 0 0 35px;
     padding: 0 20px 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--secondary);
     font-family: 'Roboto Mono', monospace; 
+    font-size: 15px;
     text-decoration: none; 
     font-style: normal; 
     font-variant: normal;
